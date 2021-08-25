@@ -14,43 +14,31 @@ func main() {
 	li[2] = student{"zlh",18}
 	li[3] = worker{"hcw",40}
 
-	// 为何传地址？
-	// 指针默认类型位nil，便于和非默认实例区分
+	// 判断能否转换
 	for _,obj := range li{
-		func(x business){
-			w := workertran(x)
-			s := studenttran(x)
-			if w != nil {
-				w.work()
-			}
-			if s != nil{
-				s.study()
-			}
-		}(obj)
+		if neo,err := obj.(student);err == true{
+			neo.study()
+		}
+		if neo,err := obj.(worker);err == true{
+			neo.work()
+		}
 	}
 
+	fmt.Println()
 
 
-}
-
-func check() {
-	err := recover()
-	if err!=nil{
-
+	// 或者我们直接获取类型
+	// obj.(type)
+	for _,obj := range li{
+		switch obj.(type) {
+		case student:
+			obj.(student).study()
+		case worker:
+			obj.(worker).work()
+		}
 	}
-}
-func workertran(x business)*worker {
-	defer check()
-	neo := x.(worker)
-	return &neo
-}
-func studenttran(x business)*student {
-	defer check()
-	neo := x.(student)
-	return &neo
-}
 
-
+}
 
 
 
