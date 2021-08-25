@@ -1,41 +1,35 @@
-// 接口
+// 多态
+
 package main
 
 import "fmt"
-
-// 接口是方法的集合
-// 一但struct实现了全部的方法，则接口实现
-// 接口本身没有实例，实质上依靠实现接口的对象
-// 即成为一个指向struct的指针
-
-
 
 func main() {
 
 	s := student{"ca",18}
 	w := worker{"hcw",35}
 
+
+	// 1.多态参数
+	// 方法随传入的实例的类型而改变
 	s.day(s)
-	fmt.Println()
-	// 等效于
-	var inter business = s
-	s.day(inter)
-	fmt.Println()
-	// 调用student的接口
 	s.day(w)
-	// 调用worker的接口
 
+	// 2.多态数组
+	// 某接口数组/切片可以容纳任何一个实现该接口的对象
+	li := make([]business,4)
+	li[0] = student{"ca",18}
+	li[1] = worker{"zlc",60}
+	li[2] = student{"zlh",18}
+	li[3] = worker{"hcw",40}
 
-
-
-
+	fmt.Println(li)
 }
 
 
 type business interface {
 	do()
 	eat(int)
-	get()int
 }
 
 
@@ -49,13 +43,9 @@ func (a worker)do()  {
 func(a worker) eat(x int)  {
 	fmt.Printf("worker %s eat %d kg.\n",a.name,x)
 }
-func (a worker)get() int {
-	return 100
-}
 func (a worker)day(inter business)  {
 	inter.do()
 	inter.eat(12)
-	fmt.Printf("get %d\n",inter.get())
 }
 
 
@@ -69,13 +59,12 @@ func (a student)do()  {
 func(a student) eat(x int)  {
 	fmt.Printf("student %s eat %d kg.\n",a.name,x)
 }
-func (a student)get() int {
-	return -10
+func (a student)study() {
+	fmt.Println("i'm studying")
 }
 func (a student)day(inter business)  {
 	inter.do()
 	inter.eat(2)
-	fmt.Printf("get %d\n",inter.get())
 }
 
 

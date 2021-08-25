@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7c5239-d007-445e-8b68-60ec5fa63659" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project007/src/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project008/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project008/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project008/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project008/src/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project009/src/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project--6/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project006/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project--6/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project006/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project--6/.idea/project--6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project006/.idea/project006.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project--6/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project006/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project--6/src/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/project006/src/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project--6/src/stu/stu.go" beforeDir="false" afterPath="$PROJECT_DIR$/project006/src/stu/stu.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project004/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project004/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project004/src/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/project004/src/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project009/src/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/project009/src/main/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +37,30 @@
       <recent name="E:\goproject\src\go_object\project009" />
     </key>
   </component>
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_object" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/project013/src/main/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_object" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/project012/src/main/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -64,5 +75,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
